@@ -1,0 +1,34 @@
+# Data (Binance ToS — do not commit raw data)
+data/traders_data.csv
+data/*.csv
+
+# Generated outputs (reproducible from scripts)
+results/data_final.csv
+results/scaler_params.json
+results/model_labels.csv
+results/model_metrics.json
+results/fusion_results.json
+results/validation_results.json
+results/baseline_results.json
+results/sensitivity_results.json
+
+# Keep: final rated output (no raw API data)
+!results/traders_rated.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# LaTeX
+*.aux *.log *.out *.toc *.synctex.gz
+paper/*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
